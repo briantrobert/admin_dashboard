@@ -23,6 +23,15 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.lock
+
+# ide configuration files
+.idea/
+
+.vscode/
+
+package-lock.json
+*.snap
 
 # local env files
 .env*.local
