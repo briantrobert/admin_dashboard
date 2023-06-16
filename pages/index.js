@@ -26,13 +26,11 @@ function Home() {
               <div className="flex items-center pl-20 justify-between">
                   <h1 className="text-lg font-bold">Good Evening Briant !</h1> 
                   <div className="flex items-center pr-10 gap-4">
-                    <div className="relative">
-                      <button className="text-xs font-bold bg-[#EFECFF] flex items-center justify-center space-x-2 rounded-lg h-8 py-1 px-3">
-                      <h1>Personal Account</h1>
-                      <div className="hover:bg-[#7a74a156] bg-gray-300 w-8 h-full rounded-lg flex items-center justify-center hover:scale-105 transition-all ease-in-out">
+                    <div className="flex">
+                      <input type="text" disabled className="text-xs font-bold bg-[#EFECFF] w-32 rounded-s-lg h-8 py-1 px-3" placeholder="Personal Account"/>
+                      <button className="hover:bg-[#7a74a156] bg-[#EFECFF] w-8 h-8 rounded-e-lg flex items-center justify-center hover:scale-105 transition-all ease-in-out">
                         <UpDownArrowSvg />
-                      </div> 
-                      </button>
+                      </button> 
                     </div>
                    <button className="flex items-center justify-center bg-[#52469C] h-8 w-8 shadow-xl hover:scale-110 transition-all ease-in-out rounded-lg "><WalletSvg color={"#fff"}/></button>
                   </div>
@@ -46,7 +44,7 @@ function Home() {
                     <img className="absolute h-full w-full object-cover" src="./img/back_img.jpg" alt="My image" />
                     <div className="absolute flex flex-col space-y-2 p-2">
                       <div className="pb-1 pl-1 pt-2">
-                      <SwitchButton />
+                      <SwitchButton trending={false}/>
                       </div>
                       <div className="pl-1 pt-1">
                         <h1 className="text-[8px] font-semibold text-gray-300">Platinum</h1>
@@ -110,9 +108,9 @@ function Home() {
 
                        </div>
                        {/* pumping cards */}
-                       <div className="pt-9 h-75">
+                       <div className="pt-6 h-65">
                       <div className="flex items-center justify-between w-full hover:border hover:border-dashed hover:bg-gray-200 hover:border-gray-500 h-16 rounded-xl transition-all ease-in-out">
-                        <div className="bg-white w-full ml-1 mr-1 p-1 rounded-xl flex items-center justify-between border border-gray-300 hover:translate-x-4 hover:shadow-2xl hover:-translate-y-4 transition-all ease-in-out">
+                        <div className="bg-white w-full ml-1 mr-1 p-1 rounded-xl flex items-center justify-between border border-gray-300 hover:translate-x-2 hover:shadow-2xl hover:-translate-y-5 transition-all ease-in-out">
                           <div className="flex items-center justify-center space-x-2 p-1 pl-2 pr-1">
                             <div className="w-10 h-10 rounded-lg overflow-hidden shadow-lg">
                               <img className="h-full w-full object-cover" src="./img/my.jpg" alt="My image" />
@@ -126,12 +124,12 @@ function Home() {
                             <h1 className="text-sm font-bold">-3,000<span className="text-gray-200 pl-1">PKR</span></h1>
                           </div>
                           <div className="pr-5">
-                            <SwitchButton size={"normal"}/>
+                            <SwitchButton trending size={"normal"}/>
                           </div>
                         </div>
                       </div>
                       <div className="flex items-center justify-between w-full hover:border hover:border-dashed hover:bg-gray-200 hover:border-gray-500 h-16 rounded-xl transition-all ease-in-out">
-                        <div className="bg-white w-full ml-1 mr-1 p-1 rounded-xl flex border border-gray-300 hover:translate-x-4 hover:shadow-2xl hover:-translate-y-4 transition-all ease-in-out">
+                        <div className="bg-white w-full ml-1 mr-1 p-1 rounded-xl flex items-center justify-between border border-gray-300 hover:translate-x-2 hover:shadow-2xl hover:-translate-y-5 transition-all ease-in-out">
                           <div className="flex items-center justify-center space-x-2 p-1 pl-2 pr-1">
                             <div className="w-10 h-10 rounded-lg overflow-hidden shadow-lg">
                               <img className="h-full w-full object-cover" src="./img/my.jpg" alt="My image" />
@@ -141,11 +139,16 @@ function Home() {
                               <h1 className="text-xs text-gray-400">Online Shopping</h1>
                             </div>
                           </div>
-
+                          <div className="pl-10">
+                            <h1 className="text-sm font-bold">-3,000<span className="text-gray-200 pl-1">PKR</span></h1>
+                          </div>
+                          <div className="pr-5">
+                            <SwitchButton trending size={"normal"}/>
+                          </div>
                         </div>
                       </div>
                       <div className="flex items-center justify-between w-full hover:border hover:border-dashed hover:bg-gray-200 hover:border-gray-500 h-16 rounded-xl transition-all ease-in-out">
-                        <div className="bg-white w-full ml-1 mr-1 p-1 rounded-xl flex border border-gray-300 hover:translate-x-4 hover:shadow-2xl hover:-translate-y-4 transition-all ease-in-out">
+                        <div className="bg-white w-full ml-1 mr-1 p-1 rounded-xl flex items-center justify-between border border-gray-300 hover:translate-x-2 hover:shadow-2xl hover:-translate-y-5 transition-all ease-in-out">
                           <div className="flex items-center justify-center space-x-2 p-1 pl-2 pr-1">
                             <div className="w-10 h-10 rounded-lg overflow-hidden shadow-lg">
                               <img className="h-full w-full object-cover" src="./img/my.jpg" alt="My image" />
@@ -155,9 +158,15 @@ function Home() {
                               <h1 className="text-xs text-gray-400">Online Shopping</h1>
                             </div>
                           </div>
-
+                          <div className="pl-10">
+                            <h1 className="text-sm font-bold">-3,000<span className="text-gray-200 pl-1">PKR</span></h1>
+                          </div>
+                          <div className="pr-5">
+                            <SwitchButton trending size={"normal"}/>
+                          </div>
                         </div>
                       </div>
+                      
                     </div>
                     </div>
                 </div>

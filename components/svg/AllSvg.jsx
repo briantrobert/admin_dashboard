@@ -270,8 +270,8 @@ export const UpDownArrowSvg = () => {
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="18"
-    height="18"
+    width="16"
+    height="16"
     fill="none"
     viewBox="0 0 24 24"
   >
@@ -412,6 +412,46 @@ export const ArrowDownSvg = () => {
   )
 }
 
+export const TrendingDownSvg = () => {
+  return (
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    fill="none"
+    stroke="#000"
+    viewBox="0 0 24 24"
+  >
+    <path
+      stroke="#d52443"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      d="M21 17l-6.586-6.586a2 2 0 00-2.828 0l-1.172 1.172a2 2 0 01-2.828 0L3 7m18 10h-6m6 0v-6"
+    ></path>
+  </svg>
+  )
+}
+
+export const TrendingUpSvg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="14"
+      height="14"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke="#18bb06"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        d="M21 7l-6.586 6.586a2 2 0 01-2.828 0l-1.172-1.172a2 2 0 00-2.828 0L3 17M21 7h-6m6 0v6"
+      ></path>
+    </svg>
+  )
+}
 
 
 
